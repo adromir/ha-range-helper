@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Bereichs-Helfer (Range Helper) erstellen",
+        "description": "Erstellt einen Binärsensor, der prüft, ob ein numerischer Sensor innerhalb oder außerhalb eines definierten Bereichs liegt, mit optionaler Hysterese und dynamischen Grenzwerten.",
+        "data": {
+          "name": "Name",
+          "source_entity": "Numerische Ziel-Entität",
+          "match_mode": "Vergleichsmodus",
+          "min_value": "Minimalwert (Fester Wert)",
+          "min_entity": "Minimalwert (aus Entität)",
+          "max_value": "Maximalwert (Fester Wert)",
+          "max_entity": "Maximalwert (aus Entität)",
+          "inclusive": "Inklusive Grenzwerte (<= und >=)",
+          "hysteresis": "Hysterese / Pufferzone",
+          "device_class": "Geräteklasse",
+          "active_icon": "Icon wenn Aktiv (optional)",
+          "idle_icon": "Icon wenn Inaktiv (optional)"
+        },
+        "data_description": {
+          "source_entity": "Wähle einen numerischen Sensor (z. B. Temperatur, Feuchte, Leistung, Batterie, Helligkeit) oder input_number Helfer.",
+          "min_entity": "Optional: Verknüpfe einen input_number- oder Sensor-Helfer, um das Minimum dynamisch anzupassen.",
+          "max_entity": "Optional: Verknüpfe einen input_number- oder Sensor-Helfer, um das Maximum dynamisch anzupassen.",
+          "hysteresis": "Totbereich / Pufferzone, um Flattern bei Messwerten nahe der Grenze zu verhindern."
+        }
+      }
+    },
+    "error": {
+      "empty_name": "Bitte gib einen Namen an.",
+      "empty_source": "Bitte wähle eine numerische Ziel-Entität aus.",
+      "no_bounds_specified": "Bitte gib mindestens einen Grenzwert an (Minimal- oder Maximalwert bzw. Entität).",
+      "min_greater_than_max": "Der Minimalwert darf nicht größer sein als der Maximalwert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Bereichs-Helfer bearbeiten",
+        "description": "Passe Ziel-Entität, Grenzwerte, Modus, Hysterese oder Icons an.",
+        "data": {
+          "source_entity": "Numerische Ziel-Entität",
+          "match_mode": "Vergleichsmodus",
+          "min_value": "Minimalwert (Fester Wert)",
+          "min_entity": "Minimalwert (aus Entität)",
+          "max_value": "Maximalwert (Fester Wert)",
+          "max_entity": "Maximalwert (aus Entität)",
+          "inclusive": "Inklusive Grenzwerte (<= und >=)",
+          "hysteresis": "Hysterese / Pufferzone",
+          "device_class": "Geräteklasse",
+          "active_icon": "Icon wenn Aktiv (optional)",
+          "idle_icon": "Icon wenn Inaktiv (optional)"
+        },
+        "data_description": {
+          "min_entity": "Optional: Verknüpfe einen input_number- oder Sensor-Helfer, um das Minimum dynamisch anzupassen.",
+          "max_entity": "Optional: Verknüpfe einen input_number- oder Sensor-Helfer, um das Maximum dynamisch anzupassen."
+        }
+      }
+    },
+    "error": {
+      "empty_source": "Bitte wähle eine numerische Ziel-Entität aus.",
+      "no_bounds_specified": "Bitte gib mindestens einen Grenzwert an (Minimal- oder Maximalwert bzw. Entität).",
+      "min_greater_than_max": "Der Minimalwert darf nicht größer sein als der Maximalwert."
+    }
+  },
+  "selector": {
+    "match_mode": {
+      "options": {
+        "inside": "Innerhalb des Bereichs (Min <= Wert <= Max)",
+        "outside": "Außerhalb des Bereichs (Wert < Min oder Wert > Max)"
+      }
+    }
+  }
+}

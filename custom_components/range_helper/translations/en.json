@@ -1,0 +1,74 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Create Range Helper",
+        "description": "Create a binary sensor that checks whether a numeric entity is inside or outside a defined range, with optional hysteresis and dynamic helper bounds.",
+        "data": {
+          "name": "Name",
+          "source_entity": "Numeric Target Entity",
+          "match_mode": "Match Mode",
+          "min_value": "Minimum Limit (Static Value)",
+          "min_entity": "Minimum Limit (from Entity)",
+          "max_value": "Maximum Limit (Static Value)",
+          "max_entity": "Maximum Limit (from Entity)",
+          "inclusive": "Inclusive Bounds (<= and >=)",
+          "hysteresis": "Hysteresis / Noise Buffer",
+          "device_class": "Device Class",
+          "active_icon": "Active Icon (optional)",
+          "idle_icon": "Idle Icon (optional)"
+        },
+        "data_description": {
+          "source_entity": "Select a numeric sensor (e.g., temperature, humidity, power, battery, illuminance) or input_number helper.",
+          "min_entity": "Optional: Link an input_number or sensor to adjust the minimum limit dynamically.",
+          "max_entity": "Optional: Link an input_number or sensor to adjust the maximum limit dynamically.",
+          "hysteresis": "Deadband buffer added to bounds to prevent bouncing when values hover near limits."
+        }
+      }
+    },
+    "error": {
+      "empty_name": "Please provide a name.",
+      "empty_source": "Please select a numeric target entity.",
+      "no_bounds_specified": "Please specify at least one bound (minimum or maximum value or entity).",
+      "min_greater_than_max": "The minimum value cannot be greater than the maximum value."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configure Range Helper",
+        "description": "Adjust target entity, limits, match mode, hysteresis, or custom icons.",
+        "data": {
+          "source_entity": "Numeric Target Entity",
+          "match_mode": "Match Mode",
+          "min_value": "Minimum Limit (Static Value)",
+          "min_entity": "Minimum Limit (from Entity)",
+          "max_value": "Maximum Limit (Static Value)",
+          "max_entity": "Maximum Limit (from Entity)",
+          "inclusive": "Inclusive Bounds (<= and >=)",
+          "hysteresis": "Hysteresis / Noise Buffer",
+          "device_class": "Device Class",
+          "active_icon": "Active Icon (optional)",
+          "idle_icon": "Idle Icon (optional)"
+        },
+        "data_description": {
+          "min_entity": "Optional: Link an input_number or sensor to adjust the minimum limit dynamically.",
+          "max_entity": "Optional: Link an input_number or sensor to adjust the maximum limit dynamically."
+        }
+      }
+    },
+    "error": {
+      "empty_source": "Please select a numeric target entity.",
+      "no_bounds_specified": "Please specify at least one bound (minimum or maximum value or entity).",
+      "min_greater_than_max": "The minimum value cannot be greater than the maximum value."
+    }
+  },
+  "selector": {
+    "match_mode": {
+      "options": {
+        "inside": "Inside Range (Min <= Value <= Max)",
+        "outside": "Outside Range (Value < Min or Value > Max)"
+      }
+    }
+  }
+}
