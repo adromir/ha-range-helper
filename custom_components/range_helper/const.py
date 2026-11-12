@@ -56,3 +56,4 @@ ATTR_MATCH_MODE = "match_mode"
 ATTR_INCLUSIVE = "inclusive"
 ATTR_HYSTERESIS = "hysteresis"
 ATTR_IN_RANGE = "in_range"
+

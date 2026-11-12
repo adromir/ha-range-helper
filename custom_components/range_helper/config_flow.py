@@ -275,3 +275,4 @@ class RangeHelperOptionsFlow(config_entries.OptionsFlow):
             data_schema=schema,
             errors=errors,
         )
+

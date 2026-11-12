@@ -243,3 +243,4 @@ class RangeBinarySensor(BinarySensorEntity):
             self._attr_is_on = not in_range
         else:
             self._attr_is_on = in_range
+
