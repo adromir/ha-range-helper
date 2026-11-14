@@ -1,6 +1,7 @@
 # 📏 Range Helper for Home Assistant
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=adromir&repository=ha-range-helper&category=integration)
+[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/adromir)
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/default)
 [![GitHub Release](https://img.shields.io/github/v/release/adromir/ha-range-helper?style=for-the-badge&color=blue)](https://github.com/adromir/ha-range-helper/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
@@ -56,7 +57,7 @@ state: "on"
 - 🎨 **Dynamic State Icons**: Set custom icons for active vs. idle states (e.g., `mdi:thermometer-check` when in range, `mdi:thermometer-alert` when out of range).
 - 🏷️ **Rich Diagnostic Attributes**: Exposes `current_value`, `min_value`, `max_value`, `in_range`, and `hysteresis` right in developer tools.
 - ⚙️ **100% UI Config Flow & Options Flow**: Modify all parameters on the fly without YAML restarts.
-- 🌐 **Bilingual Support**: Fully localized in English and German.
+- 🌐 **Multilingual Support**: Fully localized in English, German (`de`), and Indonesian (`id`).
 
 ---
 
