@@ -1,4 +1,11 @@
 {
+  "entity": {
+    "binary_sensor": {
+      "range_helper": {
+        "name": "Bereichs-Helfer"
+      }
+    }
+  },
   "config": {
     "step": {
       "user": {

@@ -1,0 +1,81 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "range_helper": {
+        "name": "Pembantu Rentang"
+      }
+    }
+  },
+  "config": {
+    "step": {
+      "user": {
+        "title": "Buat Pembantu Rentang",
+        "description": "Buat sensor biner yang memeriksa apakah entitas numerik berada di dalam atau di luar rentang yang ditentukan, dengan histeresis opsional dan batas pembantu dinamis.",
+        "data": {
+          "name": "Nama",
+          "source_entity": "Entitas Target Numerik",
+          "match_mode": "Mode Kecocokan",
+          "min_value": "Batas Minimum (Nilai Statis)",
+          "min_entity": "Batas Minimum (dari Entitas)",
+          "max_value": "Batas Maksimum (Nilai Statis)",
+          "max_entity": "Batas Maksimum (dari Entitas)",
+          "inclusive": "Batas Inklusif (<= dan >=)",
+          "hysteresis": "Histeresis / Buffer Derau",
+          "device_class": "Kelas Perangkat",
+          "active_icon": "Ikon Aktif (opsional)",
+          "idle_icon": "Ikon Idle (opsional)"
+        },
+        "data_description": {
+          "source_entity": "Pilih sensor numerik (mis. suhu, kelembapan, daya, baterai) atau pembantu input_number.",
+          "min_entity": "Opsional: Tautkan input_number atau sensor untuk menyesuaikan batas minimum secara dinamis.",
+          "max_entity": "Opsional: Tautkan input_number atau sensor untuk menyesuaikan batas maksimum secara dinamis.",
+          "hysteresis": "Buffer deadband yang ditambahkan ke batas untuk mencegah loncatan saat nilai mendekati batas."
+        }
+      }
+    },
+    "error": {
+      "empty_name": "Silakan masukkan nama.",
+      "empty_source": "Silakan pilih entitas target numerik.",
+      "no_bounds_specified": "Tentukan setidaknya satu batas (nilai atau entitas minimum atau maksimum).",
+      "min_greater_than_max": "Nilai minimum tidak boleh lebih besar dari nilai maksimum."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Konfigurasi Pembantu Rentang",
+        "description": "Sesuaikan entitas target, batas, mode kecocokan, histeresis, atau ikon kustom.",
+        "data": {
+          "source_entity": "Entitas Target Numerik",
+          "match_mode": "Mode Kecocokan",
+          "min_value": "Batas Minimum (Nilai Statis)",
+          "min_entity": "Batas Minimum (dari Entitas)",
+          "max_value": "Batas Maksimum (Nilai Statis)",
+          "max_entity": "Batas Maksimum (dari Entitas)",
+          "inclusive": "Batas Inklusif (<= dan >=)",
+          "hysteresis": "Histeresis / Buffer Derau",
+          "device_class": "Kelas Perangkat",
+          "active_icon": "Ikon Aktif (opsional)",
+          "idle_icon": "Ikon Idle (opsional)"
+        },
+        "data_description": {
+          "min_entity": "Opsional: Tautkan input_number atau sensor untuk menyesuaikan batas minimum secara dinamis.",
+          "max_entity": "Opsional: Tautkan input_number atau sensor untuk menyesuaikan batas maksimum secara dinamis."
+        }
+      }
+    },
+    "error": {
+      "empty_source": "Silakan pilih entitas target numerik.",
+      "no_bounds_specified": "Tentukan setidaknya satu batas (nilai atau entitas minimum atau maksimum).",
+      "min_greater_than_max": "Nilai minimum tidak boleh lebih besar dari nilai maksimum."
+    }
+  },
+  "selector": {
+    "match_mode": {
+      "options": {
+        "inside": "Di Dalam Rentang (Min <= Nilai <= Max)",
+        "outside": "Di Luar Rentang (Nilai < Min atau Nilai > Max)"
+      }
+    }
+  }
+}

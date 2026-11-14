@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#1e293b" stroke="#1e293b" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Slider Track -->
+    <rect x="80" y="244" width="352" height="24" rx="12" fill="#1e293b" stroke="none" />
+    <!-- Range Boundary Markers (Min & Max Brackets) -->
+    <line x1="160" y1="160" x2="160" y2="352" stroke-width="22" />
+    <circle cx="160" cy="256" r="28" fill="#1e293b" stroke="none" />
+    <line x1="352" y1="160" x2="352" y2="352" stroke-width="22" />
+    <circle cx="352" cy="256" r="28" fill="#1e293b" stroke="none" />
+    <!-- Center Value Dot -->
+    <circle cx="256" cy="256" r="14" fill="#1e293b" stroke="none" />
+  </g>
+</svg>
