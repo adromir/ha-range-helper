@@ -13,6 +13,17 @@ Eliminates complex two-condition `AND` / `OR` blocks or manual Jinja2 template s
 
 ---
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/adromir/ha-range-helper/main/Screenshots/range-helper-config.png" alt="Range Helper Configuration Dialog" width="800">
+</p>
+<p align="center">
+  <em>Configuration dialog: easily select any source entity, define minimum and maximum boundaries, set evaluation mode (inside vs. outside), and apply hysteresis buffers directly in the UI.</em>
+</p>
+
+---
+
 ## 🎯 The Problem This Solves
 
 In Home Assistant's visual automation editor, testing if a numeric sensor is within a range (e.g. *Temperature is between 20°C and 23°C*, or *Power is between 5 W and 150 W*) requires creating two separate conditions combined with boolean logic:
