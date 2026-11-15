@@ -1,4 +1,5 @@
 {
+  "title": "Pembantu Rentang",
   "entity": {
     "binary_sensor": {
       "range_helper": {

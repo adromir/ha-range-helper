@@ -1,4 +1,5 @@
 {
+  "title": "Range Helper",
   "entity": {
     "binary_sensor": {
       "range_helper": {
